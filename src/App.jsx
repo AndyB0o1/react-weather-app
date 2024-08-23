@@ -1,10 +1,11 @@
+import Weather from "./components/Weather"
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-    </>
+    <div className="p-2">
+      <Weather />
+    </div>
   )
 }
 
