@@ -8,7 +8,7 @@ export default function Weather() {
     const [umbrella, setUmbrella] = useState('');
 
     function getWeather() {
-        const apiKey = 'cc725bbc989fe360515e3aa32aab4dfb';
+        const apiKey = import.meta.env.VITE_API_KEY;
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`;
         fetch(url).then((response) => response.json())
             .then((data) => {
