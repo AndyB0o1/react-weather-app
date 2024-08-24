@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Weather from "./components/Weather"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <div className="p-2">
       <Weather />
+      <Footer />
     </div>
   )
 }
