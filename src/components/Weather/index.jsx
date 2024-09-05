@@ -41,8 +41,8 @@ export default function Weather() {
             </div>
             <h1 className="p-2 md:text-2xl">Enter your closest city below to see the current weather conditions</h1>
             <input className="p-1.5 border rounded" type="text" placeholder="Enter closest city name" value={city} onChange={(e) => setCity(e.target.value)}></input>
-            <input className="mt-2 md:mt-0 md:ml-2 p-1.5 border rounded" type="text" placeholder="UK" value={country} onChange={(e) => setCountry(e.target.value)}></input>
-            <button className="mt-2 md:ml-2 md:mt-0 md:ml-4 p-2 bg-amber-500 font-bold text-white rounded" onClick={getWeather}>See weather</button>
+            <input className="mt-2 md:mt-0 sm:ml-2 p-1.5 border rounded" type="text" placeholder="UK" value={country} onChange={(e) => setCountry(e.target.value)}></input>
+            <button className="mt-2 sm:ml-2 md:mt-0 p-2 bg-amber-500 font-bold text-white rounded" onClick={getWeather}>See weather</button>
             <div className="p-1.5">
                 {weather && (
                     <div className="w-4/5 mx-auto md:mx-none">
